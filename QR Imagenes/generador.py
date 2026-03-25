@@ -2,13 +2,7 @@ import qrcode
 import os
 
 def generar_qr_limpio(datos, ruta_salida):
-    """
-    Genera un código QR estándar con el texto de la adivinanza.
-    Sin imágenes ni logos en el centro.
-    """
-    # Configuramos el QR. 
-    # Usamos ERROR_CORRECT_L porque al no haber logo, no necesitamos 
-    # tanta redundancia y el QR queda más limpio y fácil de leer.
+    
     qr = qrcode.QRCode(
         version=None, 
         error_correction=qrcode.constants.ERROR_CORRECT_L,

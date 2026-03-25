@@ -1,7 +1,6 @@
 import qrcode
 import os
 
-# Definimos las adivinanzas (los textos que irán DENTRO del QR)
 riddles = [
     {
         "location": "Library",

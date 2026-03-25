@@ -7,7 +7,7 @@ y = 1
 z = 3
 
 print(round(pi)) #Redondea al entero más cercano
-print(math.ceil(pi)) #Rendondea HAcia arriba
+print(math.ceil(pi)) #Rendondea Hacia arriba
 print(abs(pi)) #Valor absoluto
 print(pow(pi, 2)) #Eleva pi al cuadrado
 print(math.sqrt(420)) #Raiz cuadrada
