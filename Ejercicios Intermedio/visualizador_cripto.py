@@ -5,51 +5,66 @@ import os
 def limpiar_pantalla():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-def obtener_datos_cripto():
-    url = "https://api.coincap.io/v2/assets?limit=10"
-    
-    try:
-        respuesta = requests.get(url, timeout=10)
-        respuesta.raise_for_status() 
-        datos = respuesta.json()
-        return datos['data']
-    except requests.exceptions.RequestException as e:
-        print(f"[-] Error de conexion: {e}")
-        return None
+def obtener_datos():
+    # URL principal de la API de CoinGecko para obtener precios de criptomonedas
+    url = "https://api.coingecko.com/api/v3/simple/price"
 
-def mostrar_tabla(criptomonedas):
-    print("\n" + "="*60)
-    print(f"{'RANK':<5} | {'MONEDA':<15} | {'SIMBOLO':<8} | {'PRECIO (USD)':<12} | {'CAMBIO 24H'}")
-    print("="*60)
-    
-    for moneda in criptomonedas:
-        rank = moneda['rank']
-        nombre = moneda['name'][:15]
-        simbolo = moneda['symbol']
-        precio = float(moneda['priceUsd'])
-        cambio = float(moneda['changePercent24Hr'])
+    # Parámetros de la solicitud para obtener los precios en USD y el cambio en 24 horas
+    parametros = {
+        "ids": "bitcoin,ethereum,ripple,cardano,solana,dogecoin",
+        "vs_currencies": "usd",
+        "include_24hr_change": "true"
+    }
+
+    try:
+        # Realizamos la petición a internet agregando los parámetros y un tiempo límite de espera
+        respuesta = requests.get(url, params=parametros, timeout=10)
+        # Verificamos si la respuesta fue exitosa o no, y en caso de error, se lanza una excepción
+        respuesta.raise_for_status()
+        # Convierte la respuesta en formato JSON y la retorna
+        return respuesta.json()
+    except requests.exceptions.RequestException as e:
+        print(f"[-] Error de conexión: {e}")
+        return None
+# Función para mostrar la información de las criptomonedas en formato de tabla
+def mostrar_tabla(datos):
+    print("\n" + "="*55)
+    print(f"{'CRIPTOMONEDA':<15} | {'PRECIO (USD)':<15} | {'CAMBIO 24H'}")
+    print("="*55)
+
+    # Se recorre cada criptomoneda y se imprime su información en formato de tabla
+    for moneda, info in datos.items():
+        nombre = moneda.capitalize()
+        precio = info.get("usd", 0.0)
+        cambio = info.get("usd_24h_change", 0.0)
+
+        simbolo = "▲" if cambio > 0 else "▼"
+        color = "\033[92m" if cambio > 0 else "\033[91m"
+        reset = "\033[0m"
         
-        simbolo_cambio = "▲" if cambio > 0 else "▼"
-        color_inicio = "\033[92m" if cambio > 0 else "\033[91m"
-        color_fin = "\033[0m"
-        
-        print(f"{rank:<5} | {nombre:<15} | {simbolo:<8} | ${precio:<11.2f} | {color_inicio}{simbolo_cambio} {abs(cambio):.2f}%{color_fin}")
-    print("="*60)
+        # imprime la información de la criptomoneda en formato de tabla
+        print(f"{nombre:<15} | ${precio:<14.2f} | {color}{simbolo} {abs(cambio):.2f}%{reset}")
+    print("="*55)
 
 def main():
+    # Bucle que actualiza la información cada 15 segundos
     while True:
         limpiar_pantalla()
-        print("TRACKER DE CRIPTOMONEDAS EN TIEMPO REAL")
+        print("TRACKER DE CRIPTOMONEDAS")
         print("Obteniendo datos de la red...\n")
         
-        criptos = obtener_datos_cripto()
-        
-        if criptos:
-            mostrar_tabla(criptos)
-            print("\nActualizando automaticamente en 10 segundos... (Presiona Ctrl+C para salir)")
-        
-        time.sleep(10)
+        # Llamamos a la función de internet
+        datos = obtener_datos()
 
+        # Si la petición fue exitosa, mostrar la tabla de precios y cambios
+        if datos:
+            mostrar_tabla(datos)
+            print("\nActualizando en 15 segundos...")
+        
+        # Pause el programa durante 15 segundos antes de la siguiente actualización
+        time.sleep(15)
+
+# Punto de entrada del programa
 if __name__ == "__main__":
     try:
         main()
