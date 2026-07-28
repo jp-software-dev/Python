@@ -2,27 +2,29 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Data_Analysis-Algorithms_&_AI-orange?style=for-the-badge)
 ![Red Team](https://img.shields.io/badge/Red_Team-Offensive_Ops-darkred?style=for-the-badge&logo=kalilinux&logoColor=white)
-![Terminal](https://img.shields.io/badge/Terminal-CLI-black?style=for-the-badge&logo=windows-terminal&logoColor=white)
+![Blue Team](https://img.shields.io/badge/Blue_Team-Defensive_Ops-blue?style=for-the-badge&logo=fortinet&logoColor=white)
 
-This repository serves as a progressive engineering workspace dedicated to mastering advanced Python logic, data structures, and secure systems programming. It is intentionally structured to evolve from fundamental algorithmic challenges to robust local applications, concurrent networking tools, and offensive/defensive cybersecurity scripts.
+This repository is a comprehensive engineering workspace dedicated to advanced Python programming, data analysis, and full-spectrum cybersecurity operations. It is intentionally structured to showcase a progression from foundational logic challenges to complex neural networks and applied security tooling.
 
-## 🗂️ Repository Scope & Architecture
+## 🗂️ Repository Architecture & Scope
 
-Rather than a single monolithic application, this repository acts as a comprehensive portfolio of my applied Python engineering. It contains modular, standalone scripts categorized by their technical complexity and core focus:
+Rather than a single monolithic application, this workspace contains modular, standalone projects categorized by their technical discipline and complexity level:
 
-* **Core Logic & CLI Engineering:** Scripts focused on mastering Python syntax, memory management, advanced control flows, and creating highly functional Command-Line Interface (CLI) tools.
-* **Data Integration & Persistence:** Intermediate implementations integrating external data manipulation and database management (e.g., `BeautifulSoup4` web scrapers, API consumers, and relational CRUD operations using `SQLite3` and `MySQL`).
-* **Concurrency & Structural Algorithms:** Advanced architectures utilizing complex data structures and multi-threading for optimized performance (e.g., concurrent task execution, automated data processing pipelines).
-* **Red Team & Cybersecurity Ops:** Applied security tooling focusing on offensive scripting and defensive operations (e.g., concurrent local area network scanners, automated port mapping, custom encryption protocols, and footprinting utilities).
+* **🛡️ Cybersecurity (Red & Blue Team):** Applied security tooling covering both **Red Team** operations (offensive scripting, footprinting, concurrent network scanners) and **Blue Team** operations (defensive auditing, secure protocols, local environment hardening).
+* **📊 Data Analysis & AI (Análisis de Datos):** Advanced data processing implementations featuring dedicated modules for complex **Algorithms** and machine learning **Neural Networks**.
+* **🧠 Progressive Engineering (Ejercicios & Retos):** A strictly organized learning and logic path containing scripts divided by complexity (`Principiante`, `Intermedio`, `Avanzado`) alongside a complete `100 Days of Code` challenge focusing on core Python mechanics, memory management, and data structures.
+* **🛠️ Practical Utilities (QR Generators):** Functional automation scripts for generating and managing QR codes across various formats (Links, Images, and Text).
+* **💾 Database Operations:** Local persistence implementations handling relational CRUD operations utilizing `SQLite3` (e.g., inventory systems and URL tracking).
 
 ## 💻 Tech Stack & Libraries
 
 * **Core Language:** Python 3.x (OOP, Multithreading)
-* **Data Handling & Web:** `requests`, `bs4` (BeautifulSoup), `sqlite3`, `mysql-connector`
+* **Data & AI:** `TensorFlow`, `NumPy`, `Pandas`, `Matplotlib`
 * **Security & Networking:** `cryptography`, `socket`, `threading`
-* **System Automation:** `os`, `sys`, custom internal logging.
+* **Data Handling:** `sqlite3`, `requests`, `bs4` (BeautifulSoup)
+* **System Automation:** `os`, `sys`, custom internal logging
 
 ## 🚀 Getting Started
 
