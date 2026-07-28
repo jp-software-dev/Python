@@ -1,31 +1,33 @@
-# Python Practice Workspace 🐍
+# Python Engineering & Security Workspace 🐍
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![Security](https://img.shields.io/badge/Security-Defensive_Ops-black?style=for-the-badge&logo=shield&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Red Team](https://img.shields.io/badge/Red_Team-Offensive_Ops-darkred?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Terminal](https://img.shields.io/badge/Terminal-CLI-black?style=for-the-badge&logo=windows-terminal&logoColor=white)
 
-This repository serves as a progressive workspace for mastering Python logic, data structures, and local scripting. It is structured to evolve from fundamental algorithmic challenges to advanced structural applications and local cybersecurity defensive tools.
+This repository serves as a progressive engineering workspace dedicated to mastering advanced Python logic, data structures, and secure systems programming. It is intentionally structured to evolve from fundamental algorithmic challenges to robust local applications, concurrent networking tools, and offensive/defensive cybersecurity scripts.
 
-## 🗂️ Repository Scope & Contents
+## 🗂️ Repository Scope & Architecture
 
-This repository acts as a general portfolio of my day-to-day Python practices and exercises. Rather than a single massive application, it contains multiple standalone scripts categorized by their complexity and core focus:
+Rather than a single monolithic application, this repository acts as a comprehensive portfolio of my applied Python engineering. It contains modular, standalone scripts categorized by their technical complexity and core focus:
 
-* **Core Logic & Fundamentals:** Scripts focused on mastering Python syntax, control flows, and standard libraries (e.g., CLI tools, basic GUI apps, logic games).
-* **APIs, Web Scraping & Databases:** Intermediate exercises integrating external data and local persistence (e.g., `BeautifulSoup4` scrapers, API consumers, and `SQLite3` CRUD implementations).
-* **Structural Algorithms:** Advanced implementations of complex data structures and algorithms (e.g., automation scripts, sorting, data processing).
-* **Cybersecurity Scripts:** Defensive and analytical local tools focused on applied security (e.g., custom encryption protocols, password managers, basic network auditing).
+* **Core Logic & CLI Engineering:** Scripts focused on mastering Python syntax, memory management, advanced control flows, and creating highly functional Command-Line Interface (CLI) tools.
+* **Data Integration & Persistence:** Intermediate implementations integrating external data manipulation and database management (e.g., `BeautifulSoup4` web scrapers, API consumers, and relational CRUD operations using `SQLite3` and `MySQL`).
+* **Concurrency & Structural Algorithms:** Advanced architectures utilizing complex data structures and multi-threading for optimized performance (e.g., concurrent task execution, automated data processing pipelines).
+* **Red Team & Cybersecurity Ops:** Applied security tooling focusing on offensive scripting and defensive operations (e.g., concurrent local area network scanners, automated port mapping, custom encryption protocols, and footprinting utilities).
 
 ## 💻 Tech Stack & Libraries
 
-* **Core:** Python 3.x
-* **Data & Web:** `requests`, `bs4` (BeautifulSoup), `sqlite3`
-* **Security & Network:** `cryptography`, `socket`
-* **General:** OS manipulation, Math, Random, Datetime.
+* **Core Language:** Python 3.x (OOP, Multithreading)
+* **Data Handling & Web:** `requests`, `bs4` (BeautifulSoup), `sqlite3`, `mysql-connector`
+* **Security & Networking:** `cryptography`, `socket`, `threading`
+* **System Automation:** `os`, `sys`, custom internal logging.
 
 ## 🚀 Getting Started
 
-To explore or run these scripts locally on a Windows environment:
+To explore, review, or run these scripts locally within a Windows environment:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/jp-software-dev/python-practice.git
+   git clone [https://github.com/jp-software-dev/python-practice.git](https://github.com/jp-software-dev/python-practice.git)
