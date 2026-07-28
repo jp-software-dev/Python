@@ -32,4 +32,4 @@ To explore, review, or run these scripts locally within a Windows environment:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/jp-software-dev/python-practice.git](https://github.com/jp-software-dev/python-practice.git)
+   git clone https://github.com/jp-software-dev/python-practice.git
