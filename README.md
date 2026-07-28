@@ -1,30 +1,34 @@
-# Python Practice Workspace 🐍
+# Python Engineering & Security Workspace 🐍
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![Security](https://img.shields.io/badge/Security-Defensive_Ops-black?style=for-the-badge&logo=shield&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Data_Analysis-Algorithms_&_AI-orange?style=for-the-badge)
+![Red Team](https://img.shields.io/badge/Red_Team-Offensive_Ops-darkred?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Blue Team](https://img.shields.io/badge/Blue_Team-Defensive_Ops-blue?style=for-the-badge&logo=fortinet&logoColor=white)
 
-This repository serves as a progressive workspace for mastering Python logic, data structures, and local scripting. It is structured to evolve from fundamental algorithmic challenges to advanced structural applications and local cybersecurity defensive tools.
+This repository is a comprehensive engineering workspace dedicated to advanced Python programming, data analysis, and full-spectrum cybersecurity operations. It is intentionally structured to showcase a progression from foundational logic challenges to complex neural networks and applied security tooling.
 
-## 🗂️ Repository Scope & Contents
+## 🗂️ Repository Architecture & Scope
 
-This repository acts as a general portfolio of my day-to-day Python practices and exercises. Rather than a single massive application, it contains multiple standalone scripts categorized by their complexity and core focus:
+Rather than a single monolithic application, this workspace contains modular, standalone projects categorized by their technical discipline and complexity level:
 
-* **Core Logic & Fundamentals:** Scripts focused on mastering Python syntax, control flows, and standard libraries (e.g., CLI tools, basic GUI apps, logic games).
-* **APIs, Web Scraping & Databases:** Intermediate exercises integrating external data and local persistence (e.g., `BeautifulSoup4` scrapers, API consumers, and `SQLite3` CRUD implementations).
-* **Structural Algorithms:** Advanced implementations of complex data structures and algorithms (e.g., automation scripts, sorting, data processing).
-* **Cybersecurity Scripts:** Defensive and analytical local tools focused on applied security (e.g., custom encryption protocols, password managers, basic network auditing).
+* **🛡️ Cybersecurity (Red & Blue Team):** Applied security tooling covering both **Red Team** operations (offensive scripting, footprinting, concurrent network scanners) and **Blue Team** operations (defensive auditing, secure protocols, local environment hardening).
+* **📊 Data Analysis & AI (Análisis de Datos):** Advanced data processing implementations featuring dedicated modules for complex **Algorithms** and machine learning **Neural Networks**.
+* **🧠 Progressive Engineering (Ejercicios & Retos):** A strictly organized learning and logic path containing scripts divided by complexity (`Principiante`, `Intermedio`, `Avanzado`) alongside a complete `100 Days of Code` challenge focusing on core Python mechanics, memory management, and data structures.
+* **🛠️ Practical Utilities (QR Generators):** Functional automation scripts for generating and managing QR codes across various formats (Links, Images, and Text).
+* **💾 Database Operations:** Local persistence implementations handling relational CRUD operations utilizing `SQLite3` (e.g., inventory systems and URL tracking).
 
 ## 💻 Tech Stack & Libraries
 
-* **Core:** Python 3.x
-* **Data & Web:** `requests`, `bs4` (BeautifulSoup), `sqlite3`
-* **Security & Network:** `cryptography`, `socket`
-* **General:** OS manipulation, Math, Random, Datetime.
+* **Core Language:** Python 3.x (OOP, Multithreading)
+* **Data & AI:** `TensorFlow`, `NumPy`, `Pandas`, `Matplotlib`
+* **Security & Networking:** `cryptography`, `socket`, `threading`
+* **Data Handling:** `sqlite3`, `requests`, `bs4` (BeautifulSoup)
+* **System Automation:** `os`, `sys`, custom internal logging
 
 ## 🚀 Getting Started
 
-To explore or run these scripts locally on a Windows environment:
+To explore, review, or run these scripts locally within a Windows environment:
 
 1. Clone the repository:
    ```bash
