@@ -1,13 +1,16 @@
+# Python Engineering & Security .gitignore
+
 # Virtual environments
 .venv/
 venv/
 env/
 ENV/
 
-# Python
+# Python Core
 __pycache__/
 *.py[cod]
 *$py.class
+.Python
 
 # SQLite / Databases
 *.db
@@ -17,38 +20,49 @@ __pycache__/
 *.sqlite-shm
 *.sqlite-wal
 
-# Logs / temp
+# Data Analysis, AI & Jupyter
+data/
+data/processed/
+*.csv
+*.dat
+*.out
+.ipynb_checkpoints/
+
+# Logs / Temp
 *.log
 *.tmp
 *.temp
 .hintrc
 
-# IDEs
+# IDEs & Workspaces
 .vscode/
 .idea/
 
-# Environment variables
+# Environment Variables & Secrets
 .env
 .env.*
+*.pem
+*.key
 
-# FastAPI / Uvicorn
+# FastAPI / Uvicorn / Web
 *.pid
 *.sock
 *.seed
 *.cover
 
-# Build files
+# Build Files & Packages
 build/
 dist/
 *.egg-info/
+*.egg
 
-
-# Testing cache
+# Testing Cache
 .pytest_cache/
 .coverage
 htmlcov/
+.tox/
 
-# OS files
+# OS Files (Windows/macOS)
 .DS_Store
 Thumbs.db
 desktop.ini
