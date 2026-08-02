@@ -19,7 +19,8 @@ __pycache__/
 *.db-journal
 *.sqlite-shm
 *.sqlite-wal
-.json
+base_datos_notas.json
+*_db.json
 
 # Data Analysis, AI & Jupyter
 data/
